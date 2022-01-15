@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar_information_main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/OnlineStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon"
+            app:layout_constraintBottom_toBottomOf="@+id/Avatar"
+            app:layout_constraintEnd_toEndOf="@+id/Avatar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Avatar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="User Name"
+                android:textColor="@color/TextColorMain"
+                android:textSize="50px"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="Content"
+                android:textColor="@color/TextColorHint"
+                android:textSize="35px"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dot"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:src="@color/TextColorHint"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintStart_toEndOf="@id/Content"
+                app:layout_constraintTop_toBottomOf="@id/UserName" />
+
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:includeFontPadding="false"
+                android:text="14 Minutes"
+                android:textColor="@color/TextColorHint"
+                android:textSize="35px"
+                app:layout_constraintStart_toEndOf="@id/dot"
+                app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

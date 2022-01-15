@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.025" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Information"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideTop">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Avatar_Information"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/avatar_information_main"
+            app:civ_border_width="2dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Title_Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:includeFontPadding="false"
+            android:text="@string/Hello"
+            android:textColor="@color/TextColorMain"
+            android:textSize="70px"
+            app:layout_constraintStart_toEndOf="@id/Avatar_Information"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Name_Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:includeFontPadding="false"
+            android:paddingStart="5dp"
+            android:text="Anna!"
+            android:textColor="@color/ColorMain"
+            android:textSize="70px"
+            app:layout_constraintStart_toEndOf="@+id/Title_Information"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/GoodDay_Information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/brandon_med"
+            android:includeFontPadding="false"
+            android:text="@string/GoodDay"
+            android:textColor="@color/TextColorHint"
+            android:textSize="35px"
+            app:layout_constraintStart_toEndOf="@id/Avatar_Information"
+            app:layout_constraintTop_toBottomOf="@id/Title_Information" />
+
+        <ImageView
+            android:id="@+id/WavingIcon_Information"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_waving_information_main"
+            app:layout_constraintBottom_toBottomOf="@id/GoodDay_Information"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toEndOf="@+id/GoodDay_Information"
+            app:layout_constraintTop_toTopOf="@+id/GoodDay_Information" />
+
+        <ImageView
+            android:id="@+id/NotifyIcon_Information"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_no_message_main"
+            android:padding="5dp"
+            android:src="@drawable/ic_notification_information_main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Information">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/InputSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_search"
+                android:drawableStart="@drawable/ic_search"
+                android:hint="Search"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/TextColorHint"
+                android:textColorHint="@color/TextColorHint"
+                android:textCursorDrawable="@android:drawable/dark_header"
+                android:textSize="35px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerOnlineFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/InputSearch" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/RecyclerOnlineFriend" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
