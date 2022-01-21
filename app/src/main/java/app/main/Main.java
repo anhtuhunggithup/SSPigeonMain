@@ -1,4 +1,4 @@
-package app.com.sspigeonmain;
+package app.main;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+
+import app.com.sspigeonmain.R;
 
 public class Main extends AppCompatActivity {
 

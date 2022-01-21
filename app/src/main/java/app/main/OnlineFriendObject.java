@@ -1,4 +1,4 @@
-package app.com.sspigeonmain;
+package app.main;
 
 import android.graphics.Bitmap;
 

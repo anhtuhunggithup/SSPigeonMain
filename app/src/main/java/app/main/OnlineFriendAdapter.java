@@ -1,4 +1,4 @@
-package app.com.sspigeonmain;
+package app.main;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,6 +17,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
+import app.com.sspigeonmain.R;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class OnlineFriendAdapter extends RecyclerView.Adapter<OnlineFriendAdapter.ViewHolder> {

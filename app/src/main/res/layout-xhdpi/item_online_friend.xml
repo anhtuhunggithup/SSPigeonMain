@@ -24,7 +24,7 @@
             android:id="@+id/OnlineStatus"
             android:layout_width="15dp"
             android:layout_height="15dp"
-            android:src="@drawable/icon"
+            android:src="@drawable/icon_online_friend"
             app:layout_constraintBottom_toBottomOf="@+id/Avatar"
             app:layout_constraintEnd_toEndOf="@+id/Avatar" />
 

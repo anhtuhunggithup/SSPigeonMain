@@ -4,13 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/divider_hor_recycler.xml" value="0.3765625" />
+        <entry key="app/src/main/res/drawable/divider_ver_recycler.xml" value="0.3765625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3765625" />
+        <entry key="app/src/main/res/drawable/ic_notification_information_main.xml" value="0.3765625" />
         <entry key="app/src/main/res/drawable/ic_search.xml" value="0.3765625" />
+        <entry key="app/src/main/res/drawable/icon.xml" value="0.3765625" />
+        <entry key="app/src/main/res/drawable/icon_online_friend.xml" value="0.3765625" />
         <entry key="app/src/main/res/font/asap.xml" value="0.390625" />
         <entry key="app/src/main/res/font/asul.xml" value="0.390625" />
         <entry key="app/src/main/res/font/galdeano.xml" value="0.390625" />
         <entry key="app/src/main/res/font/lora.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/layout-xhdpi/divider.xml" value="0.67" />
-        <entry key="app/src/main/res/layout-xhdpi/item_friend.xml" value="0.25" />
+        <entry key="app/src/main/res/layout-xhdpi/item_friend.xml" value="0.5" />
         <entry key="app/src/main/res/layout-xhdpi/item_online_friend.xml" value="0.5" />
         <entry key="app/src/main/res/layout-xhdpi/main.xml" value="0.5" />
         <entry key="app/src/main/res/layout-xxhdpi/item_friend.xml" value="0.33" />
@@ -19,6 +24,10 @@
         <entry key="app/src/main/res/layout-xxxhdpi/item_friend.xml" value="0.2703125" />
         <entry key="app/src/main/res/layout-xxxhdpi/item_online_friend.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout-xxxhdpi/main.xml" value="0.3401268115942029" />
+        <entry key="app/src/message/res/drawable/ic_back_arrow.xml" value="0.3765625" />
+        <entry key="app/src/message/res/layout-xhdpi/main_message.xml" value="0.5" />
+        <entry key="app/src/message/res/layout-xxhdpi/main_message.xml" value="0.36041666666666666" />
+        <entry key="app/src/message/res/layout-xxxhdpi/main_message.xml" value="0.23378378378378378" />
       </map>
     </option>
   </component>

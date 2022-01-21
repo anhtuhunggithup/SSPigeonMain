@@ -13,4 +13,5 @@
     <color name="Icon">#7a869a</color>
     <color name="ColorMain">#0164fe</color>
     <color name="mtrl_textinput_default_box_stroke_color">#7a869a</color>
+    <color name="OnlineColor">#2ECC71</color>
 </resources>

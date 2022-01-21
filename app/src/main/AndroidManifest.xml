@@ -11,7 +11,7 @@
         android:theme="@style/Theme.SSPigeonMain">
 
         <activity
-            android:name=".Main"
+            android:name="app.main.Main"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
